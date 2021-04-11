@@ -1,0 +1,20 @@
+.card-paquetes {
+    width: 900px; 
+    height: 250px;
+}
+
+.datosprecio-card{
+    font-size: 13px;
+}
+
+.precio-card{
+    font-size: 15px;
+}
+
+.precioch-card{
+    font-size: 12px;
+}
+
+.boton-naranja{
+    background-color: #fd7e14;
+}

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ViajeEstelarModelStoreContainer" CdmEntityContainer="ViajeEstelarEntities2">
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoP" ColumnName="ApellidoP" />
+          <ScalarProperty Name="ApellidoM" ColumnName="ApellidoM" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Destino">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Destino">
+        <MappingFragment StoreEntitySet="Destino">
+          <ScalarProperty Name="ID_DESTINO" ColumnName="ID_DESTINO" />
+          <ScalarProperty Name="NombreDestino" ColumnName="NombreDestino" />
+          <ScalarProperty Name="DescripcionDestino" ColumnName="DescripcionDestino" />
+          <ScalarProperty Name="UrlImagen" ColumnName="UrlImagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paquete">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Paquete">
+        <MappingFragment StoreEntitySet="Paquete">
+          <ScalarProperty Name="ID_PAQUETE" ColumnName="ID_PAQUETE" />
+          <ScalarProperty Name="NombrePaquete" ColumnName="NombrePaquete" />
+          <ScalarProperty Name="DescripcionPaquete" ColumnName="DescripcionPaquete" />
+          <ScalarProperty Name="UrlImagen" ColumnName="UrlImagen" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="PrecioFinal" ColumnName="PrecioFinal" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedor">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Proveedor">
+        <MappingFragment StoreEntitySet="Proveedor">
+          <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venta">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Venta">
+        <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="ID_VENTA" ColumnName="ID_VENTA" />
+          <ScalarProperty Name="PaqueteVendido" ColumnName="PaqueteVendido" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+          <ScalarProperty Name="UsuarioComprador" ColumnName="UsuarioComprador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Destinos">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Destinos">
+        <MappingFragment StoreEntitySet="Destinos">
+          <ScalarProperty Name="ID_DESTINO" ColumnName="ID_DESTINO" />
+          <ScalarProperty Name="NombreDestino" ColumnName="NombreDestino" />
+          <ScalarProperty Name="DescripcionDestino" ColumnName="DescripcionDestino" />
+          <ScalarProperty Name="UrlImagen" ColumnName="UrlImagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paquetes">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Paquetes">
+        <MappingFragment StoreEntitySet="Paquetes">
+          <ScalarProperty Name="ID_PAQUETE" ColumnName="ID_PAQUETE" />
+          <ScalarProperty Name="NombrePaquete" ColumnName="NombrePaquete" />
+          <ScalarProperty Name="DescripcionPaquete" ColumnName="DescripcionPaquete" />
+          <ScalarProperty Name="UrlImagen" ColumnName="UrlImagen" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="PrecioFinal" ColumnName="PrecioFinal" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

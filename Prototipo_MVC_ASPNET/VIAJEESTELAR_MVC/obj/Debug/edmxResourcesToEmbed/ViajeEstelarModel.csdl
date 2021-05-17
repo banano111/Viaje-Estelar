@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ViajeEstelarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoM" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="Int32" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Destino">
+    <Key>
+      <PropertyRef Name="ID_DESTINO" />
+    </Key>
+    <Property Name="ID_DESTINO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreDestino" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionDestino" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="UrlImagen" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Paquete">
+    <Key>
+      <PropertyRef Name="ID_PAQUETE" />
+    </Key>
+    <Property Name="ID_PAQUETE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombrePaquete" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionPaquete" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="UrlImagen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Descuento" Type="Int32" />
+    <Property Name="PrecioFinal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="RFC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="ID_VENTA" />
+    </Key>
+    <Property Name="ID_VENTA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaqueteVendido" Type="Int32" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="FechaVenta" Type="DateTime" Precision="0" />
+    <Property Name="UsuarioComprador" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Destinos">
+    <Key>
+      <PropertyRef Name="ID_DESTINO" />
+    </Key>
+    <Property Name="ID_DESTINO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreDestino" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionDestino" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="UrlImagen" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Paquetes">
+    <Key>
+      <PropertyRef Name="ID_PAQUETE" />
+    </Key>
+    <Property Name="ID_PAQUETE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombrePaquete" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DescripcionPaquete" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="UrlImagen" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Descuento" Type="Int32" />
+    <Property Name="PrecioFinal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="ViajeEstelarEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Destino" EntityType="Self.Destino" />
+    <EntitySet Name="Paquete" EntityType="Self.Paquete" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" />
+    <EntitySet Name="Destinos" EntityType="Self.Destinos" />
+    <EntitySet Name="Paquetes" EntityType="Self.Paquetes" />
+  </EntityContainer>
+</Schema>

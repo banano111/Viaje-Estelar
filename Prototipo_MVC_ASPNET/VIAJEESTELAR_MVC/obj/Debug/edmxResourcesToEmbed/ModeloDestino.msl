@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ViajeEstelarModelStoreContainer" CdmEntityContainer="ViajeEstelarEntities1">
+    <EntitySetMapping Name="Destino">
+      <EntityTypeMapping TypeName="ViajeEstelarModel.Destino">
+        <MappingFragment StoreEntitySet="Destino">
+          <ScalarProperty Name="ID_DESTINO" ColumnName="ID_DESTINO" />
+          <ScalarProperty Name="NombreDestino" ColumnName="NombreDestino" />
+          <ScalarProperty Name="DescripcionDestino" ColumnName="DescripcionDestino" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

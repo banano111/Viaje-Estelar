@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ViajeEstelarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="ApellidoP" Type="varchar" MaxLength="30" />
+    <Property Name="ApellidoM" Type="varchar" MaxLength="30" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Destino">
+    <Key>
+      <PropertyRef Name="ID_DESTINO" />
+    </Key>
+    <Property Name="ID_DESTINO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreDestino" Type="varchar" MaxLength="30" />
+    <Property Name="DescripcionDestino" Type="varchar" MaxLength="70" />
+    <Property Name="UrlImagen" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Paquete">
+    <Key>
+      <PropertyRef Name="ID_PAQUETE" />
+    </Key>
+    <Property Name="ID_PAQUETE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombrePaquete" Type="varchar" MaxLength="30" />
+    <Property Name="DescripcionPaquete" Type="varchar" MaxLength="200" />
+    <Property Name="UrlImagen" Type="nvarchar" MaxLength="200" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="Descuento" Type="int" />
+    <Property Name="PrecioFinal" Type="money" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="RFC" Type="varchar" MaxLength="30" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="ID_VENTA" />
+    </Key>
+    <Property Name="ID_VENTA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaqueteVendido" Type="int" />
+    <Property Name="Total" Type="money" />
+    <Property Name="FechaVenta" Type="date" />
+    <Property Name="UsuarioComprador" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ViajeEstelar.dbo.Destinos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Destinos">
+    <Key>
+      <PropertyRef Name="ID_DESTINO" />
+    </Key>
+    <Property Name="ID_DESTINO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreDestino" Type="varchar" MaxLength="30" />
+    <Property Name="DescripcionDestino" Type="varchar" MaxLength="70" />
+    <Property Name="UrlImagen" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ViajeEstelar.dbo.Paquetes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Paquetes">
+    <Key>
+      <PropertyRef Name="ID_PAQUETE" />
+    </Key>
+    <Property Name="ID_PAQUETE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombrePaquete" Type="varchar" MaxLength="30" />
+    <Property Name="DescripcionPaquete" Type="varchar" MaxLength="70" />
+    <Property Name="UrlImagen" Type="nvarchar" MaxLength="1" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="Descuento" Type="int" />
+    <Property Name="PrecioFinal" Type="money" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <EntityContainer Name="ViajeEstelarModelStoreContainer">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Destino" EntityType="Self.Destino" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paquete" EntityType="Self.Paquete" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Destinos" EntityType="Self.Destinos" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Destinos].[ID_DESTINO] AS [ID_DESTINO], 
+    [Destinos].[NombreDestino] AS [NombreDestino], 
+    [Destinos].[DescripcionDestino] AS [DescripcionDestino], 
+    [Destinos].[UrlImagen] AS [UrlImagen]
+    FROM [dbo].[Destinos] AS [Destinos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Paquetes" EntityType="Self.Paquetes" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Paquetes].[ID_PAQUETE] AS [ID_PAQUETE], 
+    [Paquetes].[NombrePaquete] AS [NombrePaquete], 
+    [Paquetes].[DescripcionPaquete] AS [DescripcionPaquete], 
+    [Paquetes].[UrlImagen] AS [UrlImagen], 
+    [Paquetes].[Precio] AS [Precio], 
+    [Paquetes].[Descuento] AS [Descuento], 
+    [Paquetes].[PrecioFinal] AS [PrecioFinal], 
+    [Paquetes].[Fecha] AS [Fecha]
+    FROM [dbo].[Paquetes] AS [Paquetes]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

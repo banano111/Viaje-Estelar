@@ -1,0 +1,108 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <title>Viaje Estelar</title>
+  </head>
+  
+  <body>
+      <div class="container sticky-top" id="navbar">
+          <header
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              <div class="col-3">
+                  <img width="42px" height="42px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkI1MTsiIGQ9Ik0yNTUuNzYzLDg2LjcyOWMyMi4xMjEsMCw0MC4wNzMsMTcuOTUzLDQwLjA3Myw0MC4wNzNzLTE3Ljk1Myw0MC4wNzMtNDAuMDczLDQwLjA3Mw0KCXMtNDAuMDczLTE3Ljk1My00MC4wNzMtNDAuMDczUzIzMy42NDIsODYuNzI5LDI1NS43NjMsODYuNzI5eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRTQ1MTsiIGQ9Ik0zMjkuNjU4LDMwLjYyN2wzMy44MjIsMzMuODIybC0yNy4wMDksMjcuMDFjMC40ODEsMS4wNDIsMC44ODEsMi4xNjQsMS4zNjIsMy4yODZoMzguMTV2NjQuMTE3DQoJaC0zOC4xNWMtMC40ODEsMS4xMjItMC44ODEsMi4yNDQtMS4zNjIsMy4yODZsMjcuMDEsMjcuMDFsLTQ1LjM2Myw0NS4yODNsLTI3LjAxLTI2LjkyOWMtMS4wNDIsMC40ODEtMi4xNjQsMC44ODEtMy4yODYsMS4zNjINCgl2MzguMTVoLTY0LjExN3YtMzguMTVjLTEuMTIyLTAuNDgxLTIuMjQ0LTAuODgxLTMuMjg2LTEuMzYyTDE5My40MSwyMzQuNDRsLTQ1LjM2My00NS4yODNsMjcuMDEtMjcuMDENCgljLTAuNDgxLTEuMDQyLTAuODgxLTIuMTY0LTEuMzYyLTMuMjg2aC0zOC4xNTJWOTQuNzQ0aDM4LjE1YzAuNDgxLTEuMTIyLDAuODgxLTIuMjQ0LDEuMzYyLTMuMjg2bC0yNy4wMS0yNy4wMDlsMzMuODIyLTMzLjgyMg0KCWwxMS41NDEtMTEuNTQxbDI3LjAwOSwyNy4wMWMxLjA0Mi0wLjQ4MSwyLjE2NC0wLjg4MSwzLjI4Ni0xLjM2MlY2LjU4Mmg2NC4xMTd2MzguMTVjMS4xMjIsMC40ODEsMi4yNDQsMC44ODEsMy4yODYsMS4zNjINCglsMjcuMDEtMjcuMDFMMzI5LjY1OCwzMC42Mjd6IE0yOTUuODM2LDEyNi44MDJjMC0yMi4xMjEtMTcuOTUzLTQwLjA3My00MC4wNzMtNDAuMDczcy00MC4wNzMsMTcuOTUzLTQwLjA3Myw0MC4wNzMNCglzMTcuOTUzLDQwLjA3Myw0MC4wNzMsNDAuMDczUzI5NS44MzYsMTQ4LjkyMywyOTUuODM2LDEyNi44MDJ6Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDlFRUY3OyIgcG9pbnRzPSIzNjcuOTY4LDQ3MS40MzMgMzY3Ljk2OCw1MDMuNDkyIDE0My41NTgsNTAzLjQ5MiAxNDMuNTU4LDQ3MS40MzMgMTc1LjYxNiw0NzEuNDMzIA0KCTMzNS45MDksNDcxLjQzMyAiLz4NCjxyZWN0IHg9IjE3NS42MTMiIHk9IjM5MS4yODYiIHN0eWxlPSJmaWxsOiNBQUM0REE7IiB3aWR0aD0iMTYwLjI5MSIgaGVpZ2h0PSI4MC4xNTEiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNEOUVFRjc7IiBwb2ludHM9IjUwNC4yMTcsMzExLjE0IDUwNC4yMTcsMzkxLjI4NiAzMzUuOTA5LDM5MS4yODYgMTc1LjYxNiwzOTEuMjg2IDcuMzA4LDM5MS4yODYgDQoJNy4zMDgsMzExLjE0ICIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzY5RjBGNzsiIGQ9Ik01MDQuMjE3LDMwLjYyN1YzMTEuMTRINy4zMDhWMzAuNjI3aDE3NC41NmwtMzMuODIyLDMzLjgyMmwyNy4wMSwyNy4wMDkNCgljLTAuNDgxLDEuMDQyLTAuODgxLDIuMTY0LTEuMzYyLDMuMjg2aC0zOC4xNTF2NjQuMTE3aDM4LjE1YzAuNDgxLDEuMTIyLDAuODgxLDIuMjQ0LDEuMzYyLDMuMjg2bC0yNy4wMSwyNy4wMWw0NS4zNjMsNDUuMjgzDQoJbDI3LjAwOS0yNi45MjljMS4wNDIsMC40ODEsMi4xNjQsMC44ODEsMy4yODYsMS4zNjJ2MzguMTVoNjQuMTE3di0zOC4xNDljMS4xMjItMC40ODEsMi4yNDQtMC44ODEsMy4yODYtMS4zNjJsMjcuMDEsMjYuOTI5DQoJbDQ1LjM2My00NS4yODNsLTI3LjAxLTI3LjAxYzAuNDgxLTEuMDQyLDAuODgxLTIuMTY0LDEuMzYyLTMuMjg2aDM4LjE1Vjk0Ljc0NGgtMzguMTVjLTAuNDgxLTEuMTIyLTAuODgxLTIuMjQ0LTEuMzYyLTMuMjg2DQoJbDI3LjAxMS0yNy4wMWwtMzMuODIyLTMzLjgyMkMzMjkuNjU4LDMwLjYyNyw1MDQuMjE3LDMwLjYyNyw1MDQuMjE3LDMwLjYyN3oiLz4NCjxyZWN0IHg9IjcuMzA4IiB5PSIzMC42MjciIHN0eWxlPSJmaWxsOiMxREJDQzU7IiB3aWR0aD0iNTYuMTAyIiBoZWlnaHQ9IjI4MC41MTIiLz4NCjxyZWN0IHg9IjcuMzA4IiB5PSIzMTEuMTM2IiBzdHlsZT0iZmlsbDojQUFDNERBOyIgd2lkdGg9IjU2LjEwMiIgaGVpZ2h0PSI4MC4xNTEiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNNTEyLDM5OS43OTRWMjQuMDQ0SDM3Ni4yMnYxNS4wOWgxMjAuNjl2MjY1LjQyMkgxNS4wOVYzOS4xMzVoMTIwLjY5di0xNS4wOUgwdjM3NS43NWgxNjguMzA4DQoJCXY0MC41NDNoMTUuMDl2LTQwLjU0M2gxNDUuMjAzdjY1LjA1NkgxMzYuMjQ5djMyLjA1OWgtMTYuNDk4VjUxMmgyNzIuNDk4di0xNS4wOUgzNzUuNzVWNDY0Ljg1aC0zMi4wNTh2LTY1LjA1Nkw1MTIsMzk5Ljc5NA0KCQlMNTEyLDM5OS43OTR6IE0zNjAuNjYsNDk2LjkwOWgtMjA5LjMydi0xNi45NjloMjA5LjMyVjQ5Ni45MDl6IE0xNS4wOSwzODQuNzA0di02NS4wNTZoNDgxLjgxOXY2NS4wNTZMMTUuMDksMzg0LjcwNA0KCQlMMTUuMDksMzg0LjcwNHoiLz4NCgk8cmVjdCB4PSIxOTkuODk5IiB5PSI0MTYuNzU5IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjExMi4yMDMiIGhlaWdodD0iMTUuMDkiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMjMxRjIwOyIgZD0iTTEyOC4yMzUsODguMTYydjc5LjIwOGgzMi4xMjhsLTIyLjc1NSwyMi43NTVsNTYuMDM1LDU1LjkzNmwyMi43NTQtMjIuNjg3djMyLjE1N2g3OS4yMDd2LTMyLjE1Ng0KCQlsMjIuNzUzLDIyLjY4Nmw1Ni4wMzYtNTUuOTM2bC0yMi43NTUtMjIuNzU1aDMyLjEyOFY4OC4xNjJoLTMyLjEyOGwyMi43NS0yMi43NUwzMTguMzU0LDkuMzc3bC0yMi43NSwyMi43NVYwaC03OS4yMDd2MzIuMTI5DQoJCUwxOTMuNjQ1LDkuMzc3bC01Ni4wMzMsNTYuMDM0bDIyLjc1LDIyLjc1SDEyOC4yMzV6IE0xNTguOTUzLDY1LjQxMWwzNC42OTItMzQuNjkybDI1LjM5NCwyNS4zOTRsMTIuNDQ3LTUuNDRWMTUuMDloNDkuMDI2djM1LjU4Mg0KCQlsMTIuNDQ3LDUuNDQxbDI1LjM5NC0yNS4zOTVsMzQuNjkzLDM0LjY5M2wtMjUuMzk1LDI1LjM5NWw1LjQ0NCwxMi40NDZoMzUuNTc5djQ5LjAyN2gtMzUuNTc5bC01LjQ0NCwxMi40NDdsMjUuMzksMjUuMzg5DQoJCWwtMzQuNjkxLDM0LjYzbC0yNS4zOTktMjUuMzI0bC0xMi40MzksNS40NHYzNS41NzloLTQ5LjAyNnYtMzUuNThsLTEyLjQzOS01LjQ0bC0yNS4zOTksMjUuMzI0bC0zNC42OTEtMzQuNjNsMjUuMzktMjUuMzg5DQoJCWwtNS40NDQtMTIuNDQ3aC0zNS41Nzl2LTQ5LjAyN2gzNS41NzlsNS40NDQtMTIuNDQ2TDE1OC45NTMsNjUuNDExeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNMjU2LDE3NS4zODRjMjYuMjU3LDAsNDcuNjE5LTIxLjM2MSw0Ny42MTktNDcuNjE5UzI4Mi4yNTcsODAuMTQ3LDI1Niw4MC4xNDcNCgkJcy00Ny42MTksMjEuMzYxLTQ3LjYxOSw0Ny42MTlTMjI5Ljc0MywxNzUuMzg0LDI1NiwxNzUuMzg0eiBNMjU2LDk1LjIzN2MxNy45MzcsMCwzMi41MjgsMTQuNTkxLDMyLjUyOCwzMi41MjgNCgkJUzI3My45MzcsMTYwLjI5MywyNTYsMTYwLjI5M3MtMzIuNTI4LTE0LjU5MS0zMi41MjgtMzIuNTI4UzIzOC4wNjMsOTUuMjM3LDI1Niw5NS4yMzd6Ii8+DQo8L2c+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgcG9pbnRzPSI0Ny4xNDksNzEuMTk0IDcxLjY2Myw3MS4xOTQgNzEuNjYzLDU2LjEwMyAzMi4wNTgsNTYuMTAzIDMyLjA1OCwxMTEuNzM2IDQ3LjE0OSwxMTEuNzM2ICIvPg0KPGc+DQoJPHJlY3QgeD0iMzIuMDU4IiB5PSIxMjcuNzY2IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjE1LjA5IiBoZWlnaHQ9IjE2LjAyOSIvPg0KCTxyZWN0IHg9IjQ2NC4zODQiIHk9IjU2LjEwMyIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIHdpZHRoPSIxNi4wMjkiIGhlaWdodD0iMTUuMDkiLz4NCjwvZz4NCjxyZWN0IHg9IjQ2NC4zODQiIHk9Ijg4LjE1OSIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIHdpZHRoPSIxNi4wMjkiIGhlaWdodD0iMTUuMDkiLz4NCjxnPg0KCTxyZWN0IHg9IjM5LjYwNyIgeT0iMjU2LjQ2OCIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIHdpZHRoPSI2NC4xMTciIGhlaWdodD0iMTUuMDkiLz4NCgk8cmVjdCB4PSIxMTkuNzQ4IiB5PSIyNTYuNDY4IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjE2LjAyOSIgaGVpZ2h0PSIxNS4wOSIvPg0KCTxyZWN0IHg9IjQwOC4yNzgiIHk9IjI1Ni40NjgiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiB3aWR0aD0iNjQuMTE3IiBoZWlnaHQ9IjE1LjA5Ii8+DQoJPHJlY3QgeD0iMzc2LjIxNiIgeT0iMjU2LjQ2OCIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIHdpZHRoPSIxNi4wMjkiIGhlaWdodD0iMTUuMDkiLz4NCjwvZz4NCjxnPg0KCTxyZWN0IHg9IjM5LjYwNyIgeT0iMjE2LjM5OCIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIHdpZHRoPSI4MC4xNTEiIGhlaWdodD0iMTUuMDkiLz4NCgk8cmVjdCB4PSIzOTIuMjUyIiB5PSIyMTYuMzk4IiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgd2lkdGg9IjgwLjE1MSIgaGVpZ2h0PSIxNS4wOSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+                  <span class="h5 ms-2">Viaje Estelar - Administracion </span>
+              </div>
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Crear Destino</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark">Crear Paquetes</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark">Alta de Proveedor</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark">Reportes</a></li>
+              </ul>
+          </header>
+      </div>
+  
+      <div class="container mt-3">
+          <div class="row d-flex justify-content-center">
+              <div class="col-10">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Paquete</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Fecha Compra</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Usuario</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Paris de Ensueño</td>
+                        <td>Francia</td>
+                        <td>3/Mayo/2021</td>
+                        <td>$23,500</td>
+                        <td>Rolando Zuñiga</td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+          </div>
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+          integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+          integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+          crossorigin="anonymous"></script>
+  </body>
+  
+  </html>

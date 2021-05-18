@@ -37,15 +37,22 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 
 
+
+
 ## Screenshots 🖥️
 
 ![Screenshot 1](/Plantillas_HTML/assets/Screenshots/1.jpeg "Screenshot 1")
 
 
+
 ![Screenshot 2](/Plantillas_HTML/assets/Screenshots/2.png "Screenshot 2")
 
 
+
 ![Screenshot 3](/Plantillas_HTML/assets/Screenshots/3.png "Screenshot 3")
+
+
+
 
 
 

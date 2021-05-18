@@ -14,6 +14,7 @@ _Requisitos para poder correr esta aplicación en tu equipo de computo_
 2. Tener Instalado Los Componentes de ASP.NET VB
 3. Tener Instalado SQL SERVER (Preferentemente version 2014)
 
+
 ### Instalación 🔧
 
 _El primer Requisito es Clonar este proyecto en tu computadora:_
@@ -25,6 +26,7 @@ git clone $ProyectURL
 _Seguido de esto solo requieres abrir el proyecto en Visual Studio para poder ejecutarlo y verlo funcionar :)_
 
 
+
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
@@ -34,12 +36,20 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [SQL SERVER](hhttps://www.microsoft.com/es-mx/sql-server/sql-server-downloads) - Gestor de Base de Datos
 
 
+
 ## Screenshots 🖥️
 
 ![Screenshot 1](/Plantillas_HTML/assets/Screenshots/1.jpeg "Screenshot 1")
+
+
 ![Screenshot 2](/Plantillas_HTML/assets/Screenshots/2.png "Screenshot 2")
+
+
 ![Screenshot 3](/Plantillas_HTML/assets/Screenshots/3.png "Screenshot 3")
 
+
+
+## Autores ✒️
 
 
 * **Alan Arturo Pedraza Luna** - *Desarrollo Fullstack de la App* - [banano111](https://github.com/banano111)

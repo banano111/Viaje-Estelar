@@ -6,12 +6,6 @@ _Proyecto para la materia Soluciones de Programacion Movil de la Carrera Ing. Si
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-El primer Requisito es Clonar este proyecto en tu computadora:
-
-```
-git clone $ProyectURL
-```
-
 ### Pre-requisitos 📋
 
 _Requisitos para poder correr esta aplicación en tu equipo de computo_
